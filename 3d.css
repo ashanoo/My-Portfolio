@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rename{
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+.rename h3{
+    font-size: 42px;
+    color: #424040;
+    font-weight: bold;
+    border-bottom: 3px solid #222;
+}
+
+.rename h3 span{
+    font-weight: 300;
+}
+
+html{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 10px; 
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    display: flex;
+}
+
+
+.container{
+    width: 100%;
+    /*max-width:150rem;*/
+    margin: auto;
+    padding: 0 1.5rem;
+}
+
+.image-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5rem;
+    grid-template-areas: 
+    'fly-1 fly-2 fly-3 fly-3'
+    'fly-1 fly-4 fly-5 fly-6'
+    'fly-7 fly-7 fly-8 fly-6'
+    'fly-9 fly-10 fly-11 fly-12'
+    'fly-13 fly-10 fly-14 fly-15'
+    'fly-16 fly-16 fly-16 fly-16'
+    'fly-16 fly-16 fly-16 fly-16';
+}
+
+.image-gallery a{
+    width: 100%;
+    height: 30rem;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.image-gallery a i{
+   color: rgba(255,255,255, .6);
+    font-size: 3rem;
+    position: relative;
+    z-index: 100;
+    padding: 1rem 3rem;
+    border: 2px solid rgba(255,255,255, .6);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity .5s;
+     
+}
+
+.image-gallery a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, .8);
+    opacity: 0;
+    transition: opacity .5s;
+    border-radius: 10px;
+}
+
+.image-gallery a:hover i,
+.image-gallery a:hover::before{
+    opacity: 1;
+}
+
+.fly-1{
+    grid-area: fly-1;
+    min-height: 61.5rem;
+    background-image: url("IMG/3D/1-01.jpg");
+}
+
+.fly-2{
+    grid-area: fly-2;
+    background-image: url("IMG/3D/1-02.jpg");
+}
+
+.fly-3{
+    grid-area: fly-3;
+    background-image: url("IMG/3D/1-03.jpg");
+}
+
+.fly-4{
+    grid-area: fly-4;
+    background-image: url("IMG/3D/1-04.jpg");
+}
+
+.fly-5{
+    grid-area: fly-5;
+    background-image: url("IMG/3D/1-05.jpg");
+}
+
+.fly-6{
+    grid-area: fly-6;
+    min-height: 61.5rem;
+    background-image: url("IMG/3D/1-06.jpg");
+}
+
+.fly-7{
+    grid-area: fly-7;
+    background-image: url("IMG/3D/1-07.jpg");
+}
+
+.fly-8{
+    grid-area: fly-8;
+    background-image: url("IMG/3D/1-08.jpg");
+}
+
+.fly-9{
+    grid-area: fly-9;
+    background-image: url("IMG/3D/1-09.jpg");
+}
+
+.fly-10{
+    grid-area: fly-10;
+    min-height: 61.5rem;
+    background-image: url("IMG/3D/1-10.jpg");
+}
+
+.fly-11{
+    grid-area: fly-11;
+    background-image: url("IMG/3D/1-11.jpg");
+}
+
+.fly-12{
+    grid-area: fly-12;
+    background-image: url("IMG/3D/1-12.jpg");
+}
+
+.fly-13{
+    grid-area: fly-13;
+    background-image: url("IMG/3D/1-13.jpg");
+}
+
+.fly-14{
+    grid-area: fly-14;
+    background-image: url("IMG/3D/1-14.jpg");
+}
+
+.fly-15{
+    grid-area: fly-15;
+    background-image: url("IMG/3D/1-15.jpg");
+}
+
+.fly-16{
+    grid-area: fly-16;
+    min-height: 61.5rem;
+    background-image: url("IMG/3D/1-16.jpg");
+}
+
+
+@media screen and (max-width: 900px){
+
+    .rename h3{
+        font-size: 42px;
+        font-weight: bold;
+        color: #575094;
+        border-bottom: 3px solid #2f1eca;
+    }
+
+
+    .image-gallery{
+        align-items: center;
+            grid-template-areas: 
+            'fly-1 fly-1 fly-1 fly-1'
+            'fly-2 fly-2 fly-2 fly-2'
+            'fly-3 fly-3 fly-3 fly-3'
+            'fly-4 fly-4 fly-4 fly-4'
+            'fly-5 fly-5 fly-5 fly-5'
+            'fly-6 fly-6 fly-6 fly-6'
+            'fly-7 fly-7 fly-7 fly-7'
+            'fly-8 fly-8 fly-8 fly-8'
+            'fly-9 fly-9 fly-9 fly-9'
+            'fly-10 fly-10 fly-10 fly-10'
+            'fly-11 fly-11 fly-11 fly-11'
+            'fly-12 fly-12 fly-12 fly-12'
+            'fly-13 fly-13 fly-13 fly-13'
+            'fly-14 fly-14 fly-14 fly-14'
+            'fly-15 fly-15 fly-15 fly-15'
+            'fly-16 fly-16 fly-16 fly-16';
+    }
+
+    .image-gallery a{
+        height: 30rem;
+    }
+    .fly-1{
+        min-height: 61.5rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .rename h3{
+        font-size: 42px;
+        font-weight: bold;
+        color: #4331e4;
+        border-bottom: 3px solid #795656;
+    }
+    
+    .image-gallery{
+        align-items: center;
+            grid-template-areas: 
+    'fly-1 fly-1 fly-1 fly-1'
+    'fly-2 fly-2 fly-2 fly-2'
+    'fly-3 fly-3 fly-3 fly-3'
+    'fly-4 fly-4 fly-4 fly-4'
+    'fly-5 fly-5 fly-5 fly-5'
+    'fly-6 fly-6 fly-6 fly-6'
+    'fly-7 fly-7 fly-7 fly-7'
+    'fly-8 fly-8 fly-8 fly-8'
+    'fly-9 fly-9 fly-9 fly-9'
+    'fly-10 fly-10 fly-10 fly-10'
+    'fly-11 fly-11 fly-11 fly-11'
+    'fly-12 fly-12 fly-12 fly-12'
+    'fly-13 fly-13 fly-13 fly-13'
+    'fly-14 fly-14 fly-14 fly-14'
+    'fly-15 fly-15 fly-15 fly-15'
+    'fly-16 fly-16 fly-16 fly-16';
+    }
+
+    .image-gallery a,
+    .fly-1{
+        min-height: 30rem;
+        height: 30rem;
+    }
+
+    .image-gallery
+    .fly-6{
+        min-height: 60rem;
+    }
+    .image-gallery
+    .fly-10 {
+        min-height: 60rem;
+    }
+    .image-gallery
+    .fly-13 {
+        min-height: 60rem;
+    }
+    .image-gallery
+    .fly-16 {
+        min-height: 60rem;
+    }
+   
+    
+}
+
+@media screen and (max-width: 300px){
+    .rename h3{
+        font-size: 22px;
+        color: gray;
+        font-weight: bold;
+        border-bottom: 3px solid #c0752f;
+    }
+
+}

@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rename{
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+.rename h3{
+    font-size: 42px;
+    color: #6b4928;
+    font-weight: bold;
+    border-bottom: 3px solid #999696;
+}
+
+.rename h3 span{
+    font-weight: 300;
+}
+
+html{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 10px; 
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #b9a48c;
+    display: flex;
+}
+
+
+.container{
+    width: 100%;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+
+.image-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5rem;
+    margin-bottom: 25px;
+    grid-template-areas: 
+    'fly-1 fly-1 fly-2 fly-3'
+    'fly-1 fly-1 fly-2 fly-4'
+    'fly-5 fly-6 fly-7 fly-4'
+    'fly-5 fly-6 fly-7 fly-8'
+    'fly-9 fly-10 fly-11 fly-8'
+    'fly-12 fly-12 fly-13 fly-14'
+    'fly-15 fly-16 fly-16 fly-17'
+    'fly-18 fly-18 fly-19 fly-20'
+    'fly-21 fly-22 fly-22 fly-20'
+    'fly-23 fly-24 fly-25 fly-26';
+    
+}
+
+.image-gallery a{
+    width: 100%;
+    height: 30rem;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.image-gallery a i{
+   color: rgba(255,255,255, .6);
+    font-size: 3rem;
+    position: relative;
+    z-index: 100;
+    padding: 1rem 3rem;
+    border: 2px solid rgba(255,255,255, .6);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity .5s;
+     
+}
+
+.image-gallery a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, .8);
+    opacity: 0;
+    transition: opacity .5s;
+    border-radius: 10px;
+}
+
+.image-gallery a:hover i,
+.image-gallery a:hover::before{
+    opacity: 1;
+}
+
+.fly-1{
+    grid-area: fly-1;
+    min-height: 61.5rem;
+    background-image: url("IMG/pixel/1-01.jpg");
+}
+
+.fly-2{
+    grid-area: fly-2;
+    min-height: 61.5rem;
+    background-image: url("IMG/pixel/1-02.jpg");
+}
+
+.fly-3{
+    grid-area: fly-3;
+    background-image: url("IMG/pixel/1-03.jpg");
+}
+
+.fly-4{
+    grid-area: fly-4;
+    min-height: 61.5rem;
+    background-image: url("IMG/pixel/1-04.jpg");
+}
+
+.fly-5{
+    grid-area: fly-5;
+    min-height: 61.5rem;
+    background-image: url("IMG/pixel/1-05.jpg");
+}
+
+.fly-6{
+    grid-area: fly-6;
+    min-height: 61.5rem;
+    background-image: url("IMG/pixel/1-06.jpg");
+}
+
+.fly-7{
+    grid-area: fly-7;
+    min-height: 61.5rem;
+    background-image: url("IMG/pixel/1-07.jpg");
+}
+
+.fly-8{
+    grid-area: fly-8;
+    min-height: 61.5rem;
+    background-image: url("IMG/pixel/1-08.jpg");
+}
+
+.fly-9{
+    grid-area: fly-9;
+    background-image: url("IMG/pixel/1-09.jpg");
+}
+
+.fly-10{
+    grid-area: fly-10;
+    background-image: url("IMG/pixel/1-10.jpg");
+}
+
+.fly-11{
+    grid-area: fly-11;
+    background-image: url("IMG/pixel/1-11.jpg");
+}
+
+.fly-12{
+    grid-area: fly-12;
+    background-image: url("IMG/pixel/1-12.jpg");
+}
+
+.fly-13{
+    grid-area: fly-13;
+    background-image: url("IMG/pixel/1-13.jpg");
+}
+
+.fly-14{
+    grid-area: fly-14;
+    background-image: url("IMG/pixel/1-14.jpg");
+}
+
+.fly-15{
+    grid-area: fly-15;
+    background-image: url("IMG/pixel/1-15.jpg");
+}
+
+.fly-16{
+    grid-area: fly-16;
+    background-image: url("IMG/pixel/1-16.jpg");
+}
+
+.fly-17{
+    grid-area: fly-17;
+    background-image: url("IMG/pixel/1-17.jpg");
+}
+
+.fly-18{
+    grid-area: fly-18;
+    background-image: url("IMG/pixel/1-18.jpg");
+}
+
+.fly-19{
+    grid-area: fly-19;
+    background-image: url("IMG/pixel/1-19.jpg");
+}
+
+.fly-20{
+    grid-area: fly-20;
+    min-height: 61.5rem;
+    background-image: url("IMG/pixel/1-20.jpg");
+}
+
+.fly-21{
+    grid-area: fly-21;
+    background-image: url("IMG/pixel/1-21.jpg");
+}
+
+.fly-22{
+    grid-area: fly-22;
+    background-image: url("IMG/pixel/1-22.jpg");
+}
+.fly-23{
+    grid-area: fly-23;
+    background-image: url("IMG/pixel/1-23.jpg");
+}
+.fly-24{
+    grid-area: fly-24;
+    background-image: url("IMG/pixel/1-24.jpg");
+}
+
+.fly-25{
+    grid-area: fly-25;
+    background-image: url("IMG/pixel/1-25.jpg");
+}
+.fly-26{
+    grid-area: fly-26;
+    background-image: url("IMG/pixel/1-26.jpg");
+}
+
+
+@media screen and (max-width: 900px){
+
+    .rename h3{
+        font-size: 42px;
+        font-weight: bold;
+        color: #575094;
+        border-bottom: 3px solid #2f1eca;
+    }
+
+
+    .image-gallery{
+        align-items: center;
+            grid-template-areas: 
+            'fly-1 fly-1 fly-2 fly-2'
+            'fly-1 fly-1 fly-2 fly-2'
+            'fly-3 fly-3 fly-4 fly-4'
+            'fly-5 fly-5 fly-4 fly-4'
+            'fly-5 fly-5 fly-6 fly-6'
+            'fly-7 fly-7 fly-6 fly-6'
+            'fly-7 fly-7 fly-9 fly-9'
+            'fly-10 fly-10 fly-8 fly-8'
+            'fly-11 fly-11 fly-8 fly-8'
+            'fly-12 fly-12 fly-12 fly-13'
+            'fly-14 fly-14 fly-15 fly-15'
+            'fly-17 fly-16 fly-16 fly-16'
+            'fly-18 fly-18 fly-19 fly-19'
+            'fly-21 fly-21 fly-20 fly-20'
+            'fly-22 fly-22 fly-20 fly-20'
+            'fly-23 fly-23 fly-24 fly-24'
+            'fly-25 fly-25 fly-25 fly-26'
+
+            ;
+    }
+
+    .image-gallery a{
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .rename h3{
+        font-size: 32px;
+        font-weight: bold;
+        color: #4331e4;
+        border-bottom: 3px solid #795656;
+    }
+    
+    .image-gallery{
+        align-items: center;
+            grid-template-areas: 
+    'fly-1 fly-1 fly-1 fly-1'
+    'fly-2 fly-2 fly-2 fly-2'
+    'fly-3 fly-3 fly-3 fly-3'
+    'fly-4 fly-4 fly-4 fly-4'
+    'fly-5 fly-5 fly-5 fly-5'
+    'fly-6 fly-6 fly-6 fly-6'
+    'fly-7 fly-7 fly-7 fly-7'
+    'fly-8 fly-8 fly-8 fly-8'
+    'fly-9 fly-9 fly-9 fly-9'
+    'fly-10 fly-10 fly-10 fly-10'
+    'fly-11 fly-11 fly-11 fly-11'
+    'fly-12 fly-12 fly-12 fly-12'
+    'fly-13 fly-13 fly-13 fly-13'
+    'fly-14 fly-14 fly-14 fly-14'
+    'fly-15 fly-15 fly-15 fly-15'
+    'fly-16 fly-16 fly-16 fly-16'
+    'fly-17 fly-17 fly-17 fly-17'
+    'fly-18 fly-18 fly-18 fly-18'
+    'fly-19 fly-19 fly-19 fly-19'
+    'fly-20 fly-20 fly-20 fly-20'
+    'fly-21 fly-21 fly-21 fly-21'
+    'fly-22 fly-22 fly-22 fly-22'
+    'fly-23 fly-23 fly-23 fly-23'
+    'fly-24 fly-24 fly-24 fly-24'
+    'fly-25 fly-25 fly-25 fly-25'
+    'fly-26 fly-26 fly-26 fly-26';
+    }
+    
+    .image-gallery a,
+    .fly-1{
+        min-height: 61.5rem;
+        height: 30rem;
+    }
+
+    .image-gallery
+    .fly-2{
+        min-height: 60rem;
+    }
+    .image-gallery
+    .fly-6 {
+        min-height: 60rem;
+    }
+    .image-gallery
+    .fly-4 {
+        min-height: 60rem;
+    }
+    .image-gallery
+    .fly-5 {
+        min-height: 60rem;
+    }
+    .image-gallery
+    .fly-7 {
+        min-height: 60rem;
+    }
+    .image-gallery
+    .fly-8 {
+        min-height: 60rem;
+    }
+    .image-gallery
+    .fly-20 {
+        min-height: 60rem;
+    }
+    
+    
+}
+
+@media screen and (max-width: 300px){
+    .rename h3{
+        font-size: 22px;
+        color: gray;
+        font-weight: bold;
+        border-bottom: 3px solid #c0752f;
+    }
+}
+
