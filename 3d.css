@@ -112,85 +112,85 @@ body{
 .fly-1{
     grid-area: fly-1;
     min-height: 61.5rem;
-    background-image: url("IMG/3D/1-01.jpg");
+    background-image: url("./IMG/3D/1-01.jpg");
 }
 
 .fly-2{
     grid-area: fly-2;
-    background-image: url("IMG/3D/1-02.jpg");
+    background-image: url("./IMG/3D/1-02.jpg");
 }
 
 .fly-3{
     grid-area: fly-3;
-    background-image: url("IMG/3D/1-03.jpg");
+    background-image: url("./IMG/3D/1-03.jpg");
 }
 
 .fly-4{
     grid-area: fly-4;
-    background-image: url("IMG/3D/1-04.jpg");
+    background-image: url("./IMG/3D/1-04.jpg");
 }
 
 .fly-5{
     grid-area: fly-5;
-    background-image: url("IMG/3D/1-05.jpg");
+    background-image: url("./IMG/3D/1-05.jpg");
 }
 
 .fly-6{
     grid-area: fly-6;
     min-height: 61.5rem;
-    background-image: url("IMG/3D/1-06.jpg");
+    background-image: url("./IMG/3D/1-06.jpg");
 }
 
 .fly-7{
     grid-area: fly-7;
-    background-image: url("IMG/3D/1-07.jpg");
+    background-image: url("./IMG/3D/1-07.jpg");
 }
 
 .fly-8{
     grid-area: fly-8;
-    background-image: url("IMG/3D/1-08.jpg");
+    background-image: url("./IMG/3D/1-08.jpg");
 }
 
 .fly-9{
     grid-area: fly-9;
-    background-image: url("IMG/3D/1-09.jpg");
+    background-image: url("./IMG/3D/1-09.jpg");
 }
 
 .fly-10{
     grid-area: fly-10;
     min-height: 61.5rem;
-    background-image: url("IMG/3D/1-10.jpg");
+    background-image: url("./IMG/3D/1-10.jpg");
 }
 
 .fly-11{
     grid-area: fly-11;
-    background-image: url("IMG/3D/1-11.jpg");
+    background-image: url("./IMG/3D/1-11.jpg");
 }
 
 .fly-12{
     grid-area: fly-12;
-    background-image: url("IMG/3D/1-12.jpg");
+    background-image: url("./IMG/3D/1-12.jpg");
 }
 
 .fly-13{
     grid-area: fly-13;
-    background-image: url("IMG/3D/1-13.jpg");
+    background-image: url("./IMG/3D/1-13.jpg");
 }
 
 .fly-14{
     grid-area: fly-14;
-    background-image: url("IMG/3D/1-14.jpg");
+    background-image: url("./IMG/3D/1-14.jpg");
 }
 
 .fly-15{
     grid-area: fly-15;
-    background-image: url("IMG/3D/1-15.jpg");
+    background-image: url("./IMG/3D/1-15.jpg");
 }
 
 .fly-16{
     grid-area: fly-16;
     min-height: 61.5rem;
-    background-image: url("IMG/3D/1-16.jpg");
+    background-image: url("./IMG/3D/1-16.jpg");
 }
 
 
