@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+    <title>Video Collection Page</title>
+
+    <style>
+        body {
+            max-width: 100%;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1{
+            font-family: "Nerko One", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .container {
+            max-width: 100%;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 0px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-container{
+            display: grid;
+            padding: 20px;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            background-color: #f6f7f8;
+            padding: 10px; 
+        }
+
+        .grid-container .video{
+           width:470px;
+           height:270px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 260px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        @media (max-width: 900px) {
+            h1{
+                font-size: 32px;
+            }
+            iframe {
+                height: 200px;
+            }
+            .grid-container{
+            grid-template-columns: auto auto;
+        }
+
+            .grid-container .video{
+                    width: 350px;
+                    height: 220px;
+        }
+
+        }
+
+        @media (max-width: 768px) {
+            iframe {
+                width: 100%;
+                height: 260px;
+            }
+            .grid-container{
+            grid-template-columns: auto;
+        }
+
+        .grid-container .video{
+                    width: 470px;
+                    height: 270px;
+        }
+        }
+
+        @media (max-width: 360px) {
+            body {
+            width: 400px;
+        }
+            iframe {
+                width: 250px;
+                height: 150px;
+            }
+            .grid-container{
+            grid-template-columns: auto;
+        }
+
+        .grid-container .video{
+                    width: 250px;
+                    height: 160px;
+        }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Premiere Pro Editable Video Collection</h1>
+
+    <!-- Example YouTube Video -->
+<div class="grid-container">
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/VhHAciauuLI?si=Zq4Z3UQDABFLo03x" allowfullscreen></iframe>
+    </div>
+
+    <!-- Example Vimeo Video -->
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/ZPMv3ChF82k?si=nZxsyvYPKbgn-cBw" allowfullscreen></iframe>
+    </div>
+
+    <!-- Example Facebook Video -->
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/3tY0JhEVWyo?si=nYnm2KtE8Z3vFihu" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/llW9Jpwz-zE?si=vAQJzbIeqNrbTQ3L" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/e0ghQQd4hNI?si=-NxU68ebWalS6OS7" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/vNY2phF3O5s?si=A_BvTJ2VN4Z-FV93" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/nj3qxBs_RME?si=vnpKCzEPWAleBfhF" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/FpGX6aeN4SM?si=BHC4yHTLFo-iCHXe" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/TOhe19IIh90?si=ROrXGqEYCRU5_QfC" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/1HlJCjHKxng?si=dPLb1hE69KJtF1KP" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/XbvqXC5v1Sw?si=k5mMpAQS5rUel2B-" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/f3ps94U5i_w?si=9NLCXABAJGgLkGTF" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/x8KMMY2pHKo?si=T-JEn2c7wJ4gFcQ8" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/0h4Bh56IOhY?si=F6WmfHQtGHMhI1EC" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/0kmITeeL8y8?si=XfmhwBIy2wCfrQT8" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/dHt9fM9X_bk?si=A5q8lBrvg2e1eZbq" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/fORqgKbknm8?si=3ciZaCEgyz2kjDvG" allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/TUdbSt2Ywxs?si=pqNk4qgYvcnB_sKv" allowfullscreen></iframe>
+    </div>
+
+
+</div>
+
+</div>
+
+
+</body>
+</html>
